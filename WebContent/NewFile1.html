@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+
+
+
+          <div class="row">
+          
+           <%if (sz!=0){ %>
+           
+           
+           <h5>
+           	<nav>
+  				<ul class="pager">
+    				<li><a class="btn btn-default" href="#">Previous</a></li>
+   					<li><a class="btn btn-default" href="#"> Next   </a></li>
+  				</ul>
+			</nav></h5>
+         <%} %>
+        </div><!--/.col-xs-12.col-sm-9-->
+          
+            <%//for (int j =0;j<4;j++) { %>
+            <div class="col-xs-6 col-lg-3">
+              <%if (sz>4*i+0) { m=movies.get(4*i+0);} else{m = movie;}%>
+	              <h2><%=m.getMoviename() %></h2>
+	              <p><img src="./content/210_130/2.jpg" alt="..." class="img-responsive"/></p>
+	              <p><%=m.getRating() %> </p>
+	              <p><%=m.getQualityRating() %> </p>
+	              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              
+             </div>
+             
+             <div class="col-xs-6 col-lg-3">
+               <%if (sz>4*i+0) { m=movies.get(4*i+0);} else{m = movie;}%>
+	              <h2><%=m.getMoviename() %></h2>
+	              <p><img src="./content/210_130/2.jpg" alt="..." class="img-responsive"/></p>
+	              <p><%=m.getRating() %> </p>
+	              <p><%=m.getQualityRating() %> </p>
+	              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            
+              
+              <div class="col-xs-6 col-lg-3">
+              <%if (sz>4*i+0) { m=movies.get(4*i+0);} else{m = movie;}%>
+	              <h2><%=m.getMoviename() %></h2>
+	              <p><img src="./content/210_130/2.jpg" alt="..." class="img-responsive"/></p>
+	              <p><%=m.getRating() %> </p>
+	              <p><%=m.getQualityRating() %> </p>
+	              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              </div>
+              
+              <div class="col-xs-6 col-lg-3">
+               <%if (sz>4*i+0) { m=movies.get(4*i+0);} else{m = movie;}%>
+	              <h2><%=m.getMoviename() %></h2>
+	              <p><img src="./content/210_130/2.jpg" alt="..." class="img-responsive"/></p>
+	              <p><%=m.getRating() %> </p>
+	              <p><%=m.getQualityRating() %> </p>
+	              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+            
+             </div>
+              
+              
+         
+         
+         
+              
+          </div><!--/row-->
+         
+        
+         
+         
+          
+
+       
+      </div><!--/row-->
+
+      <hr>
+	
+      <footer>
+        <p>&copy; By </p>
+      </footer>
+	
+    </div><!--/.container-->
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>Off Canvas Template for Bootstrap</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+     
+
+    
+
+   
+    
+
+    
+  </head>
+
+  <body>
+    <nav class="navbar navbar-fixed-left navbar-inverse" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <p class="navbar-brand" href="#"><strong>Search for fan!</strong></p>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.nav-collapse -->
+      </div><!-- /.container -->
+    </nav><!-- /.navbar -->
+
+    <div class="container">
+    
+   
+    
+    
+		
+      <div class="row row-offcanvas row-offcanvas-right">
+		
+		
+		
+		
+		 <div class="col-xs-6 col-sm-2 sidebar-offcanvas" id="sidebar" role="navigation">
+          <div class="list-group">
+          	
+          	<h1><a href="#" class="list-group-item  active" >Movies</a></h1>
+            <a href="#" class="list-group-item " >Sports</a>
+            <a href="#" class="list-group-item " >Concerts</a>
+           	
+           	<a href="#" class="list-group-item">TV shows</a>
+            
+            
+            
+          </div>
+          <hr>
+          
+        
+        
+          <form action="/Etertainment2/rec" method="post">
+          	
+          	
+          	<div class="input-group">
+      <span class="input-group-btn">
+        <button type="submit" class="btn btn-default" name="search" value="1" aria-label="Left Align">
+  			<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+		</button>
+
+      </span>
+      <input type="text" class="form-control" name="searchKeyWord" placeholder="movie name">
+    </div><!-- /input-group -->
+
+          	
+          </form>
+         
+         
+          <hr>
+        <div class="thumbnail">
+        
+           <form action="/Etertainment2/rec" method="post">
+           
+				<h4>&nbsp;My filter:</h4>
+				<hr>
+				<h4><div class="radio">
+				  <label>
+				    <input type="radio" name="optionsRadios1" value="">
+				     --In theater
+				  </label>
+				</div></h4>
+				<h4><div class="radio">
+				   <label>
+				    <input type="radio" name="optionsRadios1" value="">
+				    --Upcoming
+				  </label>
+				</div></h4>
+			<hr>	
+			
+			<div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+			    Recommendations 
+			  </label>
+			</div>
+			<h4><div class="radio">
+			  <label>
+			    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+			    Show me all
+			  </label>
+			</div></h4>
+
+			<hr>
+			<h4>Show results in <select >
+			  <option>1</option>
+			  <option>5</option>
+			  <option>10</option>
+			  <option>15</option>
+			  <option>25</option>
+			</select> days!</h4>
+			 <hr>
+			 <h4>zipcode:<input type="text" class="form-control"></h4>
+			 <h4>radius in <select >
+			  <option>1</option>
+			  <option>5</option>
+			  <option>10</option>
+			  <option>15</option>
+			  <option>25</option>
+			</select> miles!</h4>
+			 <button type="submit" class="btn btn-default form-control">Go!</button>
+			 
+
+			</form>	
+          
+        </div>
+        
+        
+          
+        </div><!--/.sidebar-offcanvas-->
+        
+        
+        
+        
+        <div class="col-xs-12 col-sm-10">
+          <p class="pull-right visible-xs">
+            <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
+          </p>
+          <div class="jumbotron">
+            <h1>Tom and Jerry</h1>
+            <div class="row">
+            	<div  class="col-xs-6 col-lg-7"><img src="http://developer.tmsimg.com/movieposters/v7/AllPhotos/10242748/p10242748_p_v7_aa.jpg?api_key=9gnk9dw7rbpzg55wmk8qamn9&h=600" alt="..." class="img-responsive"/></div>
+            	<div  class="col-xs-6 col-lg-5">
+            		<table  class="table">
+            			<tr><td><h2>rate</h2></td></tr>  
+            			<tr><td><h2>rate</h2></td></tr> 
+            			<tr><td><h2>rate</h2></td></tr>  
+            		</table>
+            	</div>
+            		
+            </div>
+            <p>This is an example to show the potential of an offcanvas layout pattern in Bootstrap. This is an example to show the potential of an offcanvas layout pattern in Bootstrap. This is an example to show the potential of an offcanvas layout pattern in Bootstrap. This is an example to show the potential of an offcanvas layout pattern in Bootstrap. This is an example to show the potential of an offcanvas layout pattern in Bootstrap. Try some responsive-range viewport sizes to see it in action.</p>
+          <span class="label label-default">Default</span>
+<span class="label label-primary">Primary</span>
+<span class="label label-success">Success</span>
+<span class="label label-info">Info</span>
+<span class="label label-warning">Warning</span>
+<span class="label label-danger">Danger</span>
+          </div>
+          
+          
+          
+       
+          
+        
+          <hr>
+          
+          
+          
+          <div class="row">
+            <div class="col-xs-6 col-lg-3">
+              <h2>Heading</h2>
+              <p><img src="./content/210_130/2.jpg" alt="..." class="img-responsive"/></p>
+              <p>Type </p>
+              <p>Rate </p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              
+            </div><!--/.col-xs-6.col-lg-4-->
+             <div class="col-xs-6 col-lg-3">
+              <h2>Heading</h2>
+              <p><img src="./content/210_130/2.jpg" alt="..." class="img-responsive"/></p>
+              <p>Type </p>
+              <p>Rate </p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              
+            </div><!--/.col-xs-6.col-lg-4-->
+             <div class="col-xs-6 col-lg-3">
+              <h2>Heading</h2>
+              <p><img src="./content/210_130/2.jpg" alt="..." class="img-responsive"/></p>
+              <p>Type </p>
+              <p>Rate </p>
+              <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
+              
+            </div><!--/.col-xs-6.col-lg-4-->
+             <div class="col-xs-6 col-lg-3">
+              <h3>Antarctica: A Year on Ice (2013)</h3>
+              <p><img src="http://developer.tmsimg.com/movieposters/v8/AllPhotos/10242748/p10242748_p_v8_aa.jpg?api_key=9gnk9dw7rbpzg55wmk8qamn9&h=300" alt="..." class="img-responsive"/></p>
+              <h4>PG-13 &nbsp;&nbsp;Language: en </h4>
+              <h3> </h3>
+              <h3><a class="btn btn-default" href="#" role="button">View details &raquo;</a></h3>
+              
+            </div><!--/.col-xs-6.col-lg-4-->
+            
+            
+            
+          
+          
+            
+            
+           
+             
+          </div><!--/row-->
+           <h5><nav>
+  				<ul class="pager">
+    				<li><a class="btn btn-default" href="#">Previous</a></li>
+   					<li><a class="btn btn-default" href="#"> Next   </a></li>
+  				</ul>
+			</nav></h5>
+           
+        </div><!--/.col-xs-12.col-sm-9-->
+
+       
+      </div><!--/row-->
+
+      <hr>
+
+      <footer>
+        <p>&copy; Company 2014</p>
+      </footer>
+
+    </div><!--/.container-->
+
+
+   
+  </body>
+</html>
